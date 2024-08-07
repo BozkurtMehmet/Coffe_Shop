@@ -209,7 +209,7 @@
     </div>
 
     <!-- Galeri-->
-    <div class="row w-100 p-4 flex-column align-items-center" id="galeri" style="background-color:#1f2833">
+    <div class="row p-4 flex-column align-items-center" id="galeri" style="background-color:#1f2833">
         <div id="carouselExampleFade2" class="carousel carousel-galeri slide carousel-fade pb-3"
             data-bs-ride="carousel">
             <div class="carousel-inner carousel-inner-galeri">
@@ -236,6 +236,7 @@
             <img src="./includes/photos/tatlı.jpg" class="w-25 h-50 px-3 mini-img">
             <img src="./includes/photos/turkish-coffe.webp" class="w-25 h-50 px-3 mini-img">
             <img src="./includes/photos/ice-latte.jpg" class="w-25 h-50 px-3 mini-img">
+            <img src="./includes/photos/menu-background.jpg" class="w-25 h-50 px-3 mini-img">
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2"
                 data-bs-slide="next" style="width: 8%; height: 8%;position:relative;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="white"
@@ -425,8 +426,8 @@
         function backToLast() {
             var Elmnt = document.getElementById('iletisim');
             var topPos = Elmnt.offsetTop;
-            document.body.scrollTop = topPos;
-            document.documentElement.scrollTop = topPos;
+            document.body.scrollTop = topPos - 100;
+            document.documentElement.scrollTop = topPos - 100;
         }
     </script>
 
