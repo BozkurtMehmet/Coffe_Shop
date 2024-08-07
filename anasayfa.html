@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <!-- Anasayfa-->
-    <div class="row text-white d-flex align-items-center w-100 first-row">
+    <!-- Navbar-->
+    <div class="row text-white d-flex align-items-center w-100 first-row" style="height: 100px;">
         <div class="col-1" style="position:absolute;">
             <button type="button" class="btn btn-danger" id="btn-back-to-top">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -30,7 +30,7 @@
                 </svg>
             </button>
         </div>
-            <nav class="navbar fixed-top navbar-expand-lg text-white navbar-dark" style="height: 100px; background-color: #1f2833;">
+            <nav class="navbar fixed-top navbar-expand-lg text-white navbar-dark" style="height: 100px; background-color: #1f2833; z-index: 1051;">
                 <a class="navbar-brand col-4 playfair-display fs-3 px-2" href="#">Yezra Cafe</a>
             
                 <div class="collapse navbar-collapse ml-4 text-center" id="navbarTogglerDemo03" style="background-color: #1f2833;">
@@ -69,16 +69,14 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
             </nav>
-
-        
     </div>
 
     
     <!-- Anasayfa-->
-    <div class="row w-100 h-100 d-flex flex-column align-items-center pb-4" style="padding-top: 100px!important;">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade w-75 h-75 pb-3" data-bs-ride="carousel">
+    <div class="row w-100 h-100 d-flex flex-column align-items-center pb-4" style="padding-top: 10px!important;">
+        <div id="carouselExampleFade" class="carousel carousel-main slide carousel-fade w-75 h-75 pb-3" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item carousel-item-main active">
                     <div class="card w-100 mt-4 p-0 pb-2 bg-white">
                         <img src="./includes/photos/ogrenciler.jpg">
                         <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
@@ -113,13 +111,13 @@
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev" style="left: -14%;">
+                data-bs-slide="prev" style="z-index: 1050;opacity:.75">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0b0c10" class="bi bi-chevron-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                   </svg>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next" style="right: -14%;">
+                data-bs-slide="next" style="z-index: 1050;opacity:.75">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0b0c10" class="bi bi-chevron-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
                   </svg>
@@ -128,7 +126,7 @@
     </div>
 
     <!-- Hakkımızda-->
-    <div class="row w-100 h-100 d-flex flex-column align-items-center pb-4" style="background-color: #ffff; padding-top: 10px!important;">
+    <div class="row w-100 h-100 d-flex flex-column align-items-center pb-4" id="hakkımızda" style="background-color: #ffff; padding-top: 10px!important;">
         <p class="fs-4 text-center pt-4 w-100 playfair-display">
             Biz Kimiz
         </p>
@@ -177,17 +175,17 @@
         </div>
     </div>
 -->
-    <div class="row w-100 h-100 p-4 flex-column align-items-center" style="background-color:#1f2833">
-        <div id="carouselExampleFade2" class="carousel carousel-galeri slide carousel-fade w-100 h-100 pb-3" data-bs-ride="carousel">
+    <div class="row p-4 flex-column align-items-center" id="galeri" style="background-color:#1f2833">
+        <div id="carouselExampleFade2" class="carousel carousel-galeri slide carousel-fade pb-3" data-bs-ride="carousel">
             <div class="carousel-inner carousel-inner-galeri">
                 <div class="carousel-item active carousel-item-galeri">
-                    <img src="./includes/photos/latte.jpg" class="d-block w-100" alt="...">
+                    <img src="./includes/photos/latte.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./includes/photos/tatlı.jpg" class="d-block w-100" alt="...">
+                    <img src="./includes/photos/tatlı.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./includes/photos/turkish-coffe.webp" class="d-block w-100" alt="...">
+                    <img src="./includes/photos/turkish-coffe.webp" alt="...">
                 </div>
             </div>
         </div>
@@ -200,7 +198,7 @@
                     d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
             </svg>
             </button>
-            <img src="./includes/photos/tatlı.jpg" class="w-25 h-50 px-3 mini-img">
+            <img src="./includes/photos/tatlı.jpg" class="w-25 h- px-3 mini-img">
             <img src="./includes/photos/turkish-coffe.webp" class="w-25 h-50 px-3 mini-img">
             <img src="./includes/photos/ice-latte.jpg" class="w-25 h-50 px-3 mini-img">
             <img src="./includes/photos/menu-background.jpg" class="w-25 h-50 px-3 mini-img">
@@ -216,9 +214,9 @@
     </div>
 
     <!-- Şubeler -->
-    <div class="row w-100 p-4" style="background-color: #45a29e;">
-        <div class="col-md-5 col-lg-5 col-sm-12 flex-column text-center">
-            <p class="fs-3 playfair-display text-white fw-bold">
+    <div class="row w-100 p-4" id="subeler" style="background-color: #45a29e;">
+        <div class="col-md-5 col-lg-5 col-sm-12 flex-column text-center card border-0 pb-2" style="background-color: #1f2833;">
+            <p class="fs-3 playfair-display text-white fw-bold pt-2">
                 Çanakkale Şubesi
             </p>
             <p class="roboto-light text-white text-center px-4" style="font-size: 20px;">
@@ -228,7 +226,7 @@
             <div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1524.89567592272!2d26.40493025511266!3d40.146931169238584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a9cf8ac31f4d%3A0x30ed058288ae7b3d!2zxLBzbWV0cGHFn2EsIEhhY8SxIFlhaHlhIFNrLiBObzoxMSwgMTcwMDAgw4dhbmFra2FsZSBNZXJrZXovw4dhbmFra2FsZQ!5e0!3m2!1str!2str!4v1722529644927!5m2!1str!2str"
-                    width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="300" style="border:0; padding: 0px;" class="rounded" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -237,8 +235,8 @@
 
             </div>
         </div>
-        <div class="col-md-5 col-lg-5 col-sm-12 flex-column text-center">
-            <p class="fs-3 playfair-display text-white fw-bold">
+        <div class="col-md-5 col-lg-5 col-sm-12 flex-column text-center card border-0 pb-2" style="background-color: #1f2833;">
+            <p class="fs-3 playfair-display text-white fw-bold pt-2">
                 Kocaeli Şubesi
             </p>
             <p class="roboto-light text-white text-center px-4" style="font-size: 20px;">
@@ -249,7 +247,7 @@
             <div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3010781456614!2d29.929827575180113!3d40.711388137654396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb44f48beb56c7%3A0x8b70bb7d0f24005f!2sBarbaros%2C%20Millet%20Cd.%20No%3A34%20D%3Ac%2C%2041090%20Ba%C5%9Fiskele%2FKocaeli!5e0!3m2!1str!2str!4v1722529810623!5m2!1str!2str"
-                    width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="300" style="border:0;padding: 0px;" class="rounded" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -257,7 +255,7 @@
     </div>
 
     <!-- İletişim -->
-    <div class="row foot-row w-100 text-white p-3" style="background-color: #1f2833;height:85vh">
+    <div class="row foot-row w-100 text-white p-3" id="iletisim" style="background-color: #1f2833;height:85vh">
         <div class="last-left-side col-md-6 col-lg-6 col-sm-12 text-center d-flex flex-column justify-content-center">
             <p class="w-100 playfair-display mb-0 " style="font-size:92px; line-height: 105px;">
                 Yezra Cafe
@@ -363,6 +361,7 @@
         galeriButton.addEventListener("click", backToThird);
         subelerButton.addEventListener("click", backToFourth);
         iletisimButton.addEventListener("click", backToLast);
+        
 
         function backToTop() {
             document.body.scrollTop = 0;
@@ -370,20 +369,28 @@
         }
 
         function backToSecond() {
-            document.body.scrollTop = 600;
-            document.documentElement.scrollTop = 600;
+            var Elmnt = document.getElementById('hakkımızda');
+            var topPos = Elmnt.offsetTop;
+            document.body.scrollTop = topPos - 100;
+            document.documentElement.scrollTop = topPos -100;
         }
         function backToThird() {
-            document.body.scrollTop = 1085;
-            document.documentElement.scrollTop = 1085;
+            var Elmnt = document.getElementById('galeri');
+            var topPos = Elmnt.offsetTop;
+            document.body.scrollTop = topPos - 100;
+            document.documentElement.scrollTop = topPos -100;
         }
         function backToFourth() {
-            document.body.scrollTop = 1675;
-            document.documentElement.scrollTop = 1675;
+            var Elmnt = document.getElementById('subeler');
+            var topPos = Elmnt.offsetTop;
+            document.body.scrollTop = topPos - 100;
+            document.documentElement.scrollTop = topPos -100;
         }
         function backToLast() {
-            document.body.scrollTop = 2200;
-            document.documentElement.scrollTop = 2200;
+            var Elmnt = document.getElementById('iletisim');
+            var topPos = Elmnt.offsetTop;
+            document.body.scrollTop = topPos;
+            document.documentElement.scrollTop = topPos;
         }
     </script>
     
