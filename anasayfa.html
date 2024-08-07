@@ -21,8 +21,8 @@
 <body>
     <!-- Navbar-->
     <div class="row text-white d-flex align-items-center w-100 first-row" style="height: 100px;">
-        <div class="col-1" style="position:absolute;">
-            <button type="button" class="btn btn-danger" id="btn-back-to-top">
+        <div class="col-1" style="position:absolute; z-index: 1055;">
+            <button type="button" class="btn btn-danger" id="btn-back-to-top" style="background-color: #1f2833;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                     class="bi bi-arrow-up p-1" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -72,12 +72,12 @@
     </div>
 
     
-    <!-- Anasayfa-->
-    <div class="row w-100 h-100 d-flex flex-column align-items-center pb-4" style="padding-top: 10px!important;">
+    <!-- Anasayfa Small-->
+    <div class="row w-100 h-100 d-flex flex-column align-items-center pb-4" id="anasayfa-sm" style="padding-top: 10px!important;">
         <div id="carouselExampleFade" class="carousel carousel-main slide carousel-fade w-75 h-75 pb-3" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item carousel-item-main active">
-                    <div class="card w-100 mt-4 p-0 pb-2 bg-white">
+                    <div class="card w-100 mt-4 p-0 pb-2 bg-white border-0">
                         <img src="./includes/photos/ogrenciler.jpg">
                         <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
                             Öğrenci İndirimi
@@ -87,8 +87,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="card w-100 mt-4 p-0 pb-2 bg-white">
+                <div class="carousel-item carousel-item-main">
+                    <div class="card w-100 mt-4 p-0 pb-2 bg-white border-0">
                         <img src="./includes/photos/ice-latte.jpg">
                         <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
                             Haftanın Ürünü Iced Latte
@@ -98,8 +98,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="card w-100 mt-4 p-0 pb-2 bg-white">
+                <div class="carousel-item carousel-item-main">
+                    <div class="card w-100 mt-4 p-0 pb-2 bg-white border-0">
                         <img src="./includes/photos/tatlı.jpg">
                         <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
                             Yezra Cafe'de Tatlı Ye Tatlı Konuş
@@ -123,6 +123,58 @@
                   </svg>
             </button>
         </div>
+    </div>
+    
+    <!-- Anasayfa Large-->
+    <div class="row w-100 h-100 d-flex justify-content-center pb-4" id="anasayfa-lg"
+        style="padding-top: 10px!important;">
+        
+        <div class="card w-25 mt-4 p-0 pb-2 bg-white border-0 mx-4">
+            <img src="./includes/photos/ogrenciler.jpg" class="rounded-top">
+            <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
+                Öğrenci İndirimi
+            </p>
+            <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
+                Vize haftası boyunca öğrenciler için geçerli tüm kahve çeşitlerinde %10 indirim ve 7/24 hizmetimiz
+                başlamıştır.
+            </p>
+        </div>
+    
+        <div class="card w-25 mt-4 p-0 pb-2 bg-white border-0 mx-4">
+            <img src="./includes/photos/ice-latte.jpg" class="rounded-top">
+            <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
+                Haftanın Ürünü Iced Latte
+            </p>
+            <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
+                5-12 Ağustos tarihleri arasında Iced Latte sadece 40TL
+            </p>
+        </div>
+        <div class="card w-25 mt-4 p-0 pb-2 bg-white border-0 mx-4">
+            <img src="./includes/photos/tatlı.jpg" class="rounded-top">
+            <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
+                Yezra Cafe'de Tatlı Ye Tatlı Konuş
+            </p>
+            <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
+                Ağustos ayı boyunca ikinci tatlı %15 indirimli!
+            </p>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"
+            style="z-index: 1050;opacity:.75">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0b0c10" class="bi bi-chevron-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+            </svg>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"
+            style="z-index: 1050;opacity:.75">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0b0c10" class="bi bi-chevron-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </button>
+    </div>
     </div>
 
     <!-- Hakkımızda-->

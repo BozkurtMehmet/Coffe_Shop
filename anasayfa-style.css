@@ -127,9 +127,26 @@ button {
 .last-left-side{
   display: block;
 }
+@media only screen and (min-width: 1268px) {
+  #anasayfa-lg .carousel-control-prev{
+    left: -20%;
+  }
+  #anasayfa-lg .carousel-control-next{
+    right: -20%;
+  }
+  #anasayfa-sm{
+    display: none!important;
+  }
+  #anasayfa-lg img{
+    height: 200px;
+  }
+}
 
 
 @media only screen and (max-width: 768px) {
+  #anasayfa-lg{
+    display: none!important;
+  }
   .navbar{
     max-width: 100%!important;
   }
