@@ -192,8 +192,8 @@ button {
     width: 100%!important;
   }
   .mini-img{
-    width: 100%!important;
-    height: 100%!important;
+    max-width: 100px!important;
+    max-height: 50px!important;
     padding-left: 0.25rem!important;
     padding-right: 0.25rem!important;
   }
@@ -202,7 +202,7 @@ button {
     height: 100%!important;
   }
   .child-img svg{
-    width: 200px!important;
+    width: 30px!important;
   }
 
   #subeler .card{
