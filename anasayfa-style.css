@@ -116,12 +116,23 @@ button {
 .carousel-item-main img {
   height: 360px;
 }
-.carousel-galeri{
-  width: 70%!important;
+
+
+.img-card:hover{
+  box-shadow: 1px 2px 3px 8px #0b0c10;
 }
-.carousel-inner-galeri img {
-  height: 480px;
-  width: 100%;
+
+.img-card-large{
+  width: 40%;
+  padding: 0.25rem;
+}
+.img-card-large:hover{
+  box-shadow: none!important;
+}
+.g-see-more .btn:hover , .g-see-less .btn:hover{
+  color:#0b0c10!important;
+  background-color: #66fcf1!important;
+  border-color: #66fcf1!important;
 }
 
 .last-left-side{
@@ -184,25 +195,12 @@ button {
     height: 200px;
   }
 
-  .carousel-galeri{
-    width: 100%!important;
+  .img-card{
+    margin: 10px auto 10px;
   }
-  .carousel-inner-galeri img {
-    height: 240px!important;
-    width: 100%!important;
-  }
-  .mini-img{
-    width: 100%!important;
-    height: 100%!important;
-    padding-left: 0.25rem!important;
-    padding-right: 0.25rem!important;
-  }
-  .child-img{
-    width: 100%!important;
-    height: 100%!important;
-  }
-  .child-img svg{
-    width: 200px!important;
+
+  #large-img-card{
+    display: none!important;
   }
 
   #subeler .card{
