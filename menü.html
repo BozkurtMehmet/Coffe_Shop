@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <link rel="stylesheet" href="menü-style.css">
+    <script src="menü-script.js"></script>
+    <title>Yezra Kafe</title>
+</head>
+
+<body>
+    <!-- Navbar-->
+    <div class="row text-white d-flex align-items-center w-100 first-row" style="height: 100px;">
+        <div class="col-1" style="position:absolute; z-index: 1055;">
+            <button type="button" class="btn btn-danger" id="btn-back-to-top" style="background-color: #1f2833;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-arrow-up p-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+                </svg>
+            </button>
+        </div>
+        <nav class="navbar fixed-top navbar-expand-lg text-white navbar-dark d-flex justify-content-space-between"
+            style="height: 100px; background-color: #1f2833; z-index: 1051; box-shadow: 0px 0px 1px 0px #66fcf1;">
+            <a class="navbar-brand col-4 playfair-display fs-3 px-2" href="#">Yezra Cafe</a>
+            <div class="collapse navbar-collapse ml-4 text-center" id="navbarTogglerDemo03"
+                style="background-color: #1f2833;">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 lexend-mega-1" id="nav-itemss">
+                    <li class="nav-item px-4 active">
+                        <a class="nav-link" id="btn-anasayfa">Anasayfa</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" id="btn-anasayfa">Kampanyalar</a>
+                    </li>
+                    <li class="nav-item menu-link px-4">
+                        <a class="dropdown-toggle nav-link" type="button" style="text-decoration: none;"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menü
+                        </a>
+                        <ul class="dropdown-menu lexend-mega-1 border-0" style="right:8px; background-color: #1f2833;">
+                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2" href="#">Türk
+                                    Kahvesi</a></li>
+                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2" href="#">Sıcak
+                                    Kahveler</a></li>
+                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2" href="#">Soğuk
+                                    Kahveler</a></li>
+                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2"
+                                    href="#">Tatlılar</a></li>
+                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2" href="#">Diğer</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-4 d-flex align-items-center justify-content-center" id="share-icon">
+                        <a class="nav-link p-0" id="btn-share" style="width: 32px; height:32px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" style="right: 20px; position: absolute;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+    
+    <!-- Categories -->
+    <div class="row p-4 flex-row align-items-center justify-content-center" id="galeri" style="background-color:#1f2833;">
+        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
+            <img src="./includes/photos/turkish-coffe.webp" alt="img-2" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
+            <div class="overlay">
+                <p class="text-white roboto-regular m-0 fs-5">
+                    Türk Kahvesi
+                </p>
+            </div>
+        </div>
+        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
+            <img src="./includes/photos/latte.jpg" alt="img-3" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
+            <div class="overlay">
+                <p class="text-white roboto-regular m-0 fs-5">
+                    Sıcak Kahveler
+                </p>
+            </div>
+        </div>
+        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
+            <img src="./includes/photos/ice-latte.jpg" alt="img-4" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
+            <div class="overlay">
+                <p class="text-white roboto-regular m-0 fs-5">
+                    Soğuk Kahveler
+                </p>
+            </div>
+        </div>
+        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
+            <img src="./includes/photos/tatlı.jpg" alt="img-5" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
+            <div class="overlay">
+                <p class="text-white roboto-regular m-0 fs-5">
+                    Tatlılar
+                </p>
+            </div>
+        </div>
+        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
+            <img src="./includes/photos/g-img-15.jpg" alt="img-6" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
+            <div class="overlay">
+                <p class="text-white roboto-regular m-0 fs-5">
+                    Diğer
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row w-100 h-100 d-flex flex-column align-items-center pb-4" id="anasayfa-sm"
+        style="padding-top: 10px!important;">
+        <div id="carouselExampleFade" class="carousel carousel-main slide carousel-fade w-75 h-75 pb-3"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" style="background-color: #1f2833; width: 10px; height: 10px!important; border-radius: 50%;" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" style="background-color: #1f2833; width: 10px; height: 10px!important; border-radius: 50%;" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" style="background-color: #1f2833; width: 10px; height: 10px!important; border-radius: 50%;" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-item-main active">
+                    <div class="card w-100 mt-4 p-0 pb-2 bg-white border-0">
+                        <img src="./includes/photos/ogrenciler.jpg">
+                        <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
+                            Öğrenci İndirimi
+                        </p>
+                        <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
+                            Vize haftası boyunca öğrenciler için geçerli tüm kahve çeşitlerinde %10 indirim ve 7/24
+                            hizmetimiz başlamıştır.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item-main">
+                    <div class="card w-100 mt-4 p-0 pb-2 bg-white border-0">
+                        <img src="./includes/photos/ice-latte.jpg">
+                        <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
+                            Haftanın Ürünü Iced Latte
+                        </p>
+                        <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
+                            5-12 Ağustos tarihleri arasında Iced Latte sadece 40TL
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item-main">
+                    <div class="card w-100 mt-4 p-0 pb-2 bg-white border-0">
+                        <img src="./includes/photos/tatlı.jpg">
+                        <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
+                            Yezra Cafe'de Tatlı Ye Tatlı Konuş
+                        </p>
+                        <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
+                            Ağustos ayı boyunca ikinci tatlı %15 indirimli!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev" style="z-index: 1050;opacity:.75">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0b0c10" class="bi bi-chevron-left"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                </svg>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next" style="z-index: 1050;opacity:.75">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0b0c10"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Anasayfa Large-->
+    <div class="row w-100 h-100 d-flex justify-content-center pb-4" id="anasayfa-lg"
+        style="padding-top: 10px!important;">
+
+        <div class="card w-25 mt-4 p-0 pb-2 bg-white border-0 mx-4">
+            <img src="./includes/photos/ogrenciler.jpg" class="rounded-top">
+            <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
+                Öğrenci İndirimi
+            </p>
+            <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
+                Vize haftası boyunca öğrenciler için geçerli tüm kahve çeşitlerinde %10 indirim ve 7/24 hizmetimiz
+                başlamıştır.
+            </p>
+        </div>
+
+        <div class="card w-25 mt-4 p-0 pb-2 bg-white border-0 mx-4">
+            <img src="./includes/photos/ice-latte.jpg" class="rounded-top">
+            <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
+                Haftanın Ürünü Iced Latte
+            </p>
+            <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
+                5-12 Ağustos tarihleri arasında Iced Latte sadece 40TL
+            </p>
+        </div>
+        <div class="card w-25 mt-4 p-0 pb-2 bg-white border-0 mx-4">
+            <img src="./includes/photos/tatlı.jpg" class="rounded-top">
+            <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
+                Yezra Cafe'de Tatlı Ye Tatlı Konuş
+            </p>
+            <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
+                Ağustos ayı boyunca ikinci tatlı %15 indirimli!
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
