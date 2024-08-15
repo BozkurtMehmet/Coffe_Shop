@@ -5,222 +5,258 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
     <link rel="stylesheet" href="menü-style.css">
     <script src="menü-script.js"></script>
-    <title>Yezra Kafe</title>
+    <title>Caffia</title>
 </head>
 
 <body>
-    <!-- Navbar-->
-    <div class="row text-white d-flex align-items-center w-100 first-row" style="height: 100px;">
-        <div class="col-1" style="position:absolute; z-index: 1055;">
-            <button type="button" class="btn btn-danger" id="btn-back-to-top" style="background-color: #1f2833;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-arrow-up p-1" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-                </svg>
-            </button>
-        </div>
-        <nav class="navbar fixed-top navbar-expand-lg text-white navbar-dark d-flex justify-content-space-between"
-            style="height: 100px; background-color: #1f2833; z-index: 1051; box-shadow: 0px 0px 1px 0px #66fcf1;">
-            <a class="navbar-brand col-4 playfair-display fs-3 px-2" href="#">Yezra Cafe</a>
-            <div class="collapse navbar-collapse ml-4 text-center" id="navbarTogglerDemo03"
-                style="background-color: #1f2833;">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 lexend-mega-1" id="nav-itemss">
-                    <li class="nav-item px-4 active">
-                        <a class="nav-link" id="btn-anasayfa">Anasayfa</a>
+    <!-- Mobile -->
+    <!-- Navbar -->
+    <div class="row text-first d-flex align-items-center w-100" id="mobile-navbar" style="height: 100px; --bs-gutter-x: 0px;">
+        <!--
+        <button class="rounded-pill d-flex justify-content-center position-fixed p-2 bg-second border-0" style="bottom: 10px; left: 2px; z-index: 1; width:48px; height: 48px;" id="sepet" data-bs-toggle="modal" data-bs-target="#modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+            </svg>
+        </button>
+        -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark text-first bg-second" style="height: 100px;">
+            <a class="navbar-brand col-4 abril-fatface-regular fs-1 px-3" href="#">Caffia</a>
+            <div class="collapse navbar-collapse position-absolute w-100 p-0 m-0 text-center bg-second text-first" style="top: 100px;" id="navbarTogglerDemo03">
+                <ul class="navbar-nav bebas-neue-regular">
+                    <li class="nav-item px-4">
+                        <a class="nav-link fs-4 active" id="btn-anasayfa">Kampanyalı Ürünler</a>
                     </li>
                     <li class="nav-item px-4">
-                        <a class="nav-link" id="btn-anasayfa">Kampanyalar</a>
+                        <a class="nav-link fs-4" id="btn-anasayfa">Sıcak Kahveler</a>
                     </li>
-                    <li class="nav-item menu-link px-4">
-                        <a class="dropdown-toggle nav-link" type="button" style="text-decoration: none;"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Menü
-                        </a>
-                        <ul class="dropdown-menu lexend-mega-1 border-0" style="right:8px; background-color: #1f2833;">
-                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2" href="#">Türk
-                                    Kahvesi</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2" href="#">Sıcak
-                                    Kahveler</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2" href="#">Soğuk
-                                    Kahveler</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2"
-                                    href="#">Tatlılar</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link nav-link-menu px-2" href="#">Diğer</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item px-4">
+                        <a class="nav-link fs-4" id="btn-anasayfa">Soğuk Kahveler</a>
                     </li>
-                    <li class="nav-item px-4 d-flex align-items-center justify-content-center" id="share-icon">
-                        <a class="nav-link p-0" id="btn-share" style="width: 32px; height:32px">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
-                                <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+                    <li class="nav-item px-4">
+                        <a class="nav-link fs-4" id="btn-anasayfa">Tatlılar</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link fs-4" id="btn-anasayfa">Diğer</a>
+                    </li>
+                    <li class="nav-item px-4 bg-interact" id="go-homepage">
+                        <a class="nav-link abril-fatface-regular fs-5 text-first m-0 py-2" id="btn-anasayfa">Anasayfaya Dön</a>
+                    </li>
+                    <div class="social-media-icons mt-3 mb-3 d-flex justify-content-evenly">
+                        <a href="https://instagram.com/" class="sc-item bg-first p-2 rounded-pill mx-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                             </svg>
                         </a>
-                    </li>
+                        <a href="https://x.com/" class="sc-item bg-first p-2 rounded-pill mx-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/" class="sc-item bg-first p-2 rounded-pill mx-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                    </div>
                 </ul>
             </div>
-            <button class="navbar-toggler" style="right: 20px; position: absolute;" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border-0" style="right: 20px; position: absolute;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="firstCollapseBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffff" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+            <button class="navbar-toggler border-0" style="right: 20px; position: absolute; display: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="secondCollapseBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
             </button>
         </nav>
     </div>
-    
-    <!-- Categories -->
-    <div class="row p-4 flex-row align-items-center justify-content-center" id="galeri" style="background-color:#1f2833;">
-        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
-            <img src="./includes/photos/turkish-coffe.webp" alt="img-2" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
-            <div class="overlay">
-                <p class="text-white roboto-regular m-0 fs-5">
-                    Türk Kahvesi
+    <!-- Navbar End -->
+
+    <div class="container-fluid d-flex p-0 m-0" style="min-height: 100vh;">
+        <div class="d-flex flex-column align-items-center col-2 p-0 m-0" id="sidebar">
+            <a href="./anasayfa.html">
+                <p class="header abril-fatface-regular fs-1 text-first m-0 mt-2 py-2">
+                    Caffia
                 </p>
+            </a>
+            <div class="hr-line rounded-pill bg-first w-75 mb-4" style="height: 6px;"></div>
+            <a href="./menü.php?cat=2" class="w-100 text-center">
+                <p class="fs-4 text-first bebas-neue-regular py-1 px-0 mb-3 active" id="cat-items">Favoriler</p>
+            </a>
+            <a href="./menü.php?cat=1" class="w-100 text-center">
+                <p class="fs-4 text-first bebas-neue-regular py-1 px-0 mb-3" id="cat-items">Kampanyalı Ürünler</p>
+            </a>
+            <a href="./menü.php?cat=2" class="w-100 text-center">
+                <p class="fs-4 text-first bebas-neue-regular py-1 px-0 mb-3" id="cat-items">Sıcak Kahveler</p>
+            </a>
+            <a href="./menü.php?cat=3" class="w-100 text-center">
+                <p class="fs-4 text-first bebas-neue-regular py-1 px-0 mb-3" id="cat-items">Soğuk Kahveler</p>
+            </a>
+            <a href="./menü.php?cat=4" class="w-100 text-center">
+                <p class="fs-4 text-first bebas-neue-regular py-1 px-0 mb-3" id="cat-items">Tatlılar</p>
+            </a>
+            <a href="./menü.php?cat=5" class="w-100 text-center">
+                <p class="fs-4 text-first bebas-neue-regular py-1 px-0 mb-3" id="cat-items">Diğer</p>
+            </a>
+            <!-- if shopping active
+                        <button class="bg-first p-3 rounded-pill mt-4 border-0" id="sepet" data-bs-toggle="modal" data-bs-target="#modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1f2833" class="bi bi-bag-check" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                            </svg>
+                        </button>';
+            -->
+            </a>
+            <a href="./anasayfa.html" class="bg-interact w-100 text-center mt-4" id="go-homepage">
+                <p class="abril-fatface-regular fs-5 text-first m-0 py-2" style="text-decoration: none!important;">
+                    Anasayfaya Dön
+                </p>
+            </a>
+            <div class="social-media-icons mt-4 d-flex justify-content-evenly">
+                <a href="https://instagram.com/" class="sc-item bg-first p-2 rounded-pill mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                </a>
+                <a href="https://x.com/" class="sc-item bg-first p-2 rounded-pill mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg>
+                </a>
+                <a href="https://facebook.com/" class="sc-item bg-first p-2 rounded-pill mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+                </a>
             </div>
         </div>
-        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
-            <img src="./includes/photos/latte.jpg" alt="img-3" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
-            <div class="overlay">
-                <p class="text-white roboto-regular m-0 fs-5">
-                    Sıcak Kahveler
-                </p>
+
+        <div class="row row-cols-3 align-items-start col-10 p-0 m-0" id="products">
+            <div class="col d-flex justify-content-center">
+                <div class="card w-75 bg-interact border-0 bebas-neue-regular mt-4">
+                    <img src="./includes/photos/g-img-11.jpg" alt="" style="height: 190px; border-top-left-radius: .25rem; border-top-right-radius: .25rem;">
+                    <p class="card-title text-first fs-3 mt-2 mb-0 text-center" style="margin-bottom: -8px!important;">Magnolia</p>
+                    <p class="card-text text-first fs-3 mt-0 mb-2 text-center">50 TL</p>
+                    <!--
+                    <a href="" class="bg-interact rounded-pill position-absolute d-flex justify-content-center align-items-center" style="width:40px; height: 40px; bottom:-15px; right:-15px;" id="sepete-ekle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </a>
+                    -->
+                </div>
             </div>
-        </div>
-        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
-            <img src="./includes/photos/ice-latte.jpg" alt="img-4" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
-            <div class="overlay">
-                <p class="text-white roboto-regular m-0 fs-5">
-                    Soğuk Kahveler
-                </p>
+            <div class="col d-flex justify-content-center">
+                <div class="card w-75 bg-interact border-0 bebas-neue-regular mt-4">
+                    <img src="./includes/photos/turkish-coffe.webp" alt="" class="" style="height: 190px; border-top-left-radius: .25rem; border-top-right-radius: .25rem;">
+                    <p class="card-title text-first fs-3 mt-2 mb-0 text-center" style="margin-bottom: -8px!important;">Türk Kahvesi
+                    </p>
+                    <p class="card-text text-first fs-3 mt-0 mb-2 text-center">45 TL</p>
+                    <!--
+                    <a href="" class="bg-interact rounded-pill position-absolute d-flex justify-content-center align-items-center" style="width:40px; height: 40px; bottom:-15px; right:-15px;" id="sepete-ekle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </a>-->
+                </div>
             </div>
-        </div>
-        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
-            <img src="./includes/photos/tatlı.jpg" alt="img-5" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
-            <div class="overlay">
-                <p class="text-white roboto-regular m-0 fs-5">
-                    Tatlılar
-                </p>
+            <div class="col d-flex justify-content-center">
+                <div class="card w-75 bg-interact border-0 bebas-neue-regular mt-4">
+                    <img src="./includes/photos/latte.jpg" alt="" class="" style="height: 190px; border-top-left-radius: .25rem; border-top-right-radius: .25rem;">
+                    <p class="card-title text-first fs-3 mt-2 mb-0 text-center" style="margin-bottom: -8px!important;">Latte</p>
+                    <p class="card-text text-first fs-3 mt-0 mb-2 text-center">60 TL</p>
+                    <!--
+                    <a href="" class="bg-interact rounded-pill position-absolute d-flex justify-content-center align-items-center" style="width:40px; height: 40px; bottom:-15px; right:-15px;" id="sepete-ekle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </a>
+                    -->
+                </div>
             </div>
-        </div>
-        <div class="img-card col-lg-2 col-md-2 p-1 col-sm-5 col-10 bg-dark mx-1 mt-0 main-img-cards position-relative">
-            <img src="./includes/photos/g-img-15.jpg" alt="img-6" class="g-img d-block w-100 " style="cursor: pointer; height: 140px;">
-            <div class="overlay">
-                <p class="text-white roboto-regular m-0 fs-5">
-                    Diğer
-                </p>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card w-75 bg-interact border-0 bebas-neue-regular mt-4">
+                    <img src="./includes/photos/ice-latte.jpg" alt="" class="" style="height: 190px; border-top-left-radius: .25rem; border-top-right-radius: .25rem;">
+                    <p class="card-title text-first fs-3 mt-2 mb-0 text-center" style="margin-bottom: -8px!important;">Iced Latte
+                    </p>
+                    <p class="card-text text-first fs-3 mt-0 mb-2 text-center">65 TL</p>
+                    <!--
+                    <a href="" class="bg-interact rounded-pill position-absolute d-flex justify-content-center align-items-center" style="width:40px; height: 40px; bottom:-15px; right:-15px;" id="sepete-ekle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1f2833" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </a>-->
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Mobile -->
+    <!-- Footer -->
+    <div class="row bg-second mt-4 p-0" id="mobile-footer" style="display: none;">
+        <p class="fs-6 text-center text-first m-0 px-0 py-2">
+            Caffia Tüm Hakları Saklıdır 2024
+        </p>
+    </div>
+    <!-- Footer End -->
 
-    <div class="row w-100 h-100 d-flex flex-column align-items-center pb-4" id="anasayfa-sm"
-        style="padding-top: 10px!important;">
-        <div id="carouselExampleFade" class="carousel carousel-main slide carousel-fade w-75 h-75 pb-3"
-            data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" style="background-color: #1f2833; width: 10px; height: 10px!important; border-radius: 50%;" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" style="background-color: #1f2833; width: 10px; height: 10px!important; border-radius: 50%;" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" style="background-color: #1f2833; width: 10px; height: 10px!important; border-radius: 50%;" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item carousel-item-main active">
-                    <div class="card w-100 mt-4 p-0 pb-2 bg-white border-0">
-                        <img src="./includes/photos/ogrenciler.jpg">
-                        <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
-                            Öğrenci İndirimi
-                        </p>
-                        <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
-                            Vize haftası boyunca öğrenciler için geçerli tüm kahve çeşitlerinde %10 indirim ve 7/24
-                            hizmetimiz başlamıştır.
-                        </p>
-                    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="ModalTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header abril-fatface-regular bg-second">
+                    <h5 class="modal-title text-white" id="ModalTitle">Sipariş Ver</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="carousel-item carousel-item-main">
-                    <div class="card w-100 mt-4 p-0 pb-2 bg-white border-0">
-                        <img src="./includes/photos/ice-latte.jpg">
-                        <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
-                            Haftanın Ürünü Iced Latte
-                        </p>
-                        <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
-                            5-12 Ağustos tarihleri arasında Iced Latte sadece 40TL
-                        </p>
-                    </div>
+                <div class="modal-body bebas-neue-regular bg-first">
+                    <form action="" method="post" class="row-cols-1 d-flex justify-content-center">
+                        <div class="card modal-card col prod-1 w-50 p-0 m-0 align-items-center bg-second border-0">
+                            <img src="./includes/photos/turkish-coffe.webp" alt="" class="w-100 mb-2" style="height: 190px; border-top-left-radius: .25rem; border-top-right-radius: .25rem;">
+                            <p class="fs-5 p-0 m-0 mb-1 text-first"> Türk Kahvesi </p>
+                            <p class="fs-5 p-0 m-0 mb-1 text-first">45 TL</p>
+                            <div class="d-flex flex-row align-items-center justify-content-center p-0 py-2" id="radio-div">
+                                <div class="d-flex flex-column justify-content-center align-items-center mx-2">
+                                    <label class="form-check-label text-first" for="radio1">
+                                        Sade
+                                    </label>
+                                    <input class="form-check-input m-0" style="border-radius: 0px;" type="radio" name="radio1" id="radio1" checked>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center align-items-center mx-2">
+                                    <label class="form-check-label text-first" for="radio1">
+                                        Orta
+                                    </label>
+                                    <input class="form-check-input m-0" style="border-radius: 0px;" type="radio" name="radio1" id="radio1">
+                                </div>
+                                <div class="d-flex flex-column justify-content-center align-items-center mx-2">
+                                    <label class="form-check-label text-first" for="radio1">
+                                        Şekerli
+                                    </label>
+                                    <input class="form-check-input m-0" style="border-radius: 0px;" type="radio" name="radio1" id="radio1">
+                                </div>
+                            </div>
+                    </form>
                 </div>
-                <div class="carousel-item carousel-item-main">
-                    <div class="card w-100 mt-4 p-0 pb-2 bg-white border-0">
-                        <img src="./includes/photos/tatlı.jpg">
-                        <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
-                            Yezra Cafe'de Tatlı Ye Tatlı Konuş
-                        </p>
-                        <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
-                            Ağustos ayı boyunca ikinci tatlı %15 indirimli!
-                        </p>
-                    </div>
+                <div class="buttons mt-4 d-flex justify-content-between">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">İptal</button>
+                    <button type="button" class="btn btn-success">Siparişi Onayla</button>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev" style="z-index: 1050;opacity:.75">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0b0c10" class="bi bi-chevron-left"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
-                </svg>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next" style="z-index: 1050;opacity:.75">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0b0c10"
-                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                </svg>
-            </button>
         </div>
     </div>
 
-    <!-- Anasayfa Large-->
-    <div class="row w-100 h-100 d-flex justify-content-center pb-4" id="anasayfa-lg"
-        style="padding-top: 10px!important;">
-
-        <div class="card w-25 mt-4 p-0 pb-2 bg-white border-0 mx-4">
-            <img src="./includes/photos/ogrenciler.jpg" class="rounded-top">
-            <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
-                Öğrenci İndirimi
-            </p>
-            <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
-                Vize haftası boyunca öğrenciler için geçerli tüm kahve çeşitlerinde %10 indirim ve 7/24 hizmetimiz
-                başlamıştır.
-            </p>
-        </div>
-
-        <div class="card w-25 mt-4 p-0 pb-2 bg-white border-0 mx-4">
-            <img src="./includes/photos/ice-latte.jpg" class="rounded-top">
-            <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
-                Haftanın Ürünü Iced Latte
-            </p>
-            <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
-                5-12 Ağustos tarihleri arasında Iced Latte sadece 40TL
-            </p>
-        </div>
-        <div class="card w-25 mt-4 p-0 pb-2 bg-white border-0 mx-4">
-            <img src="./includes/photos/tatlı.jpg" class="rounded-top">
-            <p class="fs-4 text-center px-4 pt-2 w-100 playfair-display dark-p">
-                Yezra Cafe'de Tatlı Ye Tatlı Konuş
-            </p>
-            <p class="fs-6 text-center px-4 pb-2 w-100 roboto-light dark-p">
-                Ağustos ayı boyunca ikinci tatlı %15 indirimli!
-            </p>
-        </div>
-    </div>
 
 
 </body>
